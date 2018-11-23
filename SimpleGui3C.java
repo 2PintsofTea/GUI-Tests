@@ -3,7 +3,9 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class SimpleGui3C implements ActionListener {
-    JFrame frame;
+    
+    private JFrame frame;
+    
     public static void main (String[] args) {
         SimpleGui3C gui = new SimpleGui3C();
         gui.go();
@@ -24,7 +26,8 @@ public class SimpleGui3C implements ActionListener {
         frame.setVisible(true);
     }
     
-    public void actionPerformed(ActionEvent event){
+    @Override
+    public void actionPerformed(ActionEvent event) {
         frame.repaint();
     }
     
