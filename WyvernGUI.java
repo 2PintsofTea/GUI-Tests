@@ -92,7 +92,7 @@ public class WyvernGUI {
          */
         redButton.addActionListener(new ActionListener() {
         	@Override
-            public void actionPerformed(ActionEvent event){
+            public void actionPerformed(ActionEvent event) {
                 // Defines new RGB Colour for chosen colour.
                 red = 189;
                 green = 32;
@@ -106,7 +106,7 @@ public class WyvernGUI {
         
         blueButton.addActionListener(new ActionListener() {
         	@Override
-            public void actionPerformed(ActionEvent event){
+            public void actionPerformed(ActionEvent event) {
                 red = 4;
                 green = 85;
                 blue = 123;
@@ -119,7 +119,7 @@ public class WyvernGUI {
         
         greenButton.addActionListener(new ActionListener() {
         	@Override
-            public void actionPerformed(ActionEvent event){
+            public void actionPerformed(ActionEvent event) {
                 red = 50;
                 green = 117;
                 blue = 113;
@@ -132,7 +132,7 @@ public class WyvernGUI {
         
         purpleButton.addActionListener(new ActionListener() {
         	@Override
-            public void actionPerformed(ActionEvent event){
+            public void actionPerformed(ActionEvent event) {
                 red = 74;
                 green = 44;
                 blue = 132;
@@ -145,7 +145,7 @@ public class WyvernGUI {
         
         yellowButton.addActionListener(new ActionListener() {
         	@Override
-            public void actionPerformed(ActionEvent event){
+            public void actionPerformed(ActionEvent event) {
                 red = 244;
                 green = 144;
                 blue = 12;
@@ -158,7 +158,7 @@ public class WyvernGUI {
         
         greyButton.addActionListener(new ActionListener() {
         	@Override
-            public void actionPerformed(ActionEvent event){
+            public void actionPerformed(ActionEvent event) {
                 red = 63;
                 green = 63;
                 blue = 63;
@@ -176,7 +176,7 @@ public class WyvernGUI {
     
     public class DrawPanel extends JPanel {
         @Override
-        public void paintComponent(Graphics g){
+        public void paintComponent(Graphics g) {
             Graphics2D g2d = (Graphics2D) g;
             // Defines initial Box shape, colour and size
             Color myColor = new Color(red,green,blue);
