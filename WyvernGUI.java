@@ -1,8 +1,10 @@
+package com.uk.wbs.daveh.gui;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class WyvernGUI extends JFrame {
+public class WyvernGUI {
     
     private JFrame wyvernFrame;
     
@@ -33,18 +35,7 @@ public class WyvernGUI extends JFrame {
     
     public static void main (String[] args) {
         WyvernGUI gui = new WyvernGUI();
-        UIManager.setLookAndFeel(
-                UIManager.getSystemLookAndFeelClassName());
         gui.go();
-    }
-    
-    @Override
-    public void paintComponent(Graphics g){
-        Graphics2D g2d = (Graphics2D) g;
-        // Defines initial Box shape, colour and size
-        Color myColor = new Color(red,green,blue);
-        g.setColor(myColor);
-        g.fillRect(0,0,this.getWidth(),this.getHeight());
     }
     
     public void go() {
@@ -54,7 +45,7 @@ public class WyvernGUI extends JFrame {
         Container contentPane = wyvernFrame.getContentPane();
         
         // Creates a drawing panel ready
-        WyvernGUI drawPanel = new WyvernGUI();
+        DrawPanel drawPanel = new DrawPanel();
         
         //Adds the label to the top of the Program
         wyvernFrame.getContentPane().add(BorderLayout.NORTH,label);
@@ -181,6 +172,17 @@ public class WyvernGUI extends JFrame {
         // Builds GUI to size
         wyvernFrame.setSize(800,500);
         wyvernFrame.setVisible(true);
+    }
+    
+    public class DrawPanel extends JPanel {
+        @Override
+        public void paintComponent(Graphics g){
+            Graphics2D g2d = (Graphics2D) g;
+            // Defines initial Box shape, colour and size
+            Color myColor = new Color(red,green,blue);
+            g.setColor(myColor);
+            g.fillRect(0,0,this.getWidth(),this.getHeight());
+        }
     }
     
 }
