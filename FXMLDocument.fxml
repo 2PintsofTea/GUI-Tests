@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL ?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="889.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="472.0" prefWidth="680.0" />
+        </content>
+      </ScrollPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="52.0" prefWidth="889.0" style="-fx-background-color: #c7c7c7;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="130.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Documents/wbs-logo.png" />
+               </image>
+            </ImageView>
+            <TextField layoutX="651.0" layoutY="10.0" prefHeight="33.0" prefWidth="224.0" promptText="Search for users..." style="-fx-padding: 8px 12px;" />
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="448.0" prefWidth="160.0" style="-fx-background-color: #d7d7d7; -fx-border: none; -fx-border-color: transparent;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutY="6.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="170.0" styleClass="navbar-link" text="Home" />
+            <Button layoutX="1.0" layoutY="52.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="170.0" styleClass="navbar-link" text="Database" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
